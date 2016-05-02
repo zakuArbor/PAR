@@ -1,12 +1,16 @@
 #header {
+	height: 50px;
 	background-color: red;
 }
 #nav {
 	background-color: purple;
+	height: 50px;
 }
 #content {
 	background-color: orange;
+	height: 500px;
 }
 #footer {
 	background-color: green;
+	height: 50px;
 }

@@ -1,6 +1,10 @@
 # PAR
 <p>Progress and Report Card Maker</p>
-<p>2016-05-02:</p>
+<p>PROGRESS: NOT COMPLETED</p>
+<p>NOTE: This is just a personal project that is not meant for others to use but people can look at it and use it on their own if they wish to. I am just using this github as a cloud</p>
+
+PAR, Progress and Report, is a program designed for teachers to create report cards. 
+<!--
 <ul>
 	<li>FILES CREATED
 		<ul>
@@ -38,3 +42,4 @@
 		</ul>
 	</li>
 </ul>
+-->

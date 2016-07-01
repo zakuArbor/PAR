@@ -1,21 +1,251 @@
+body {
+	margin: 0px;
+	height: 100%;
+}
+
+#container {
+	margin: 0 auto;
+	min-height: 100%;
+	height: 100%;
+	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+
+img {
+	width: 80%;
+	height: 80%;
+	display: block;
+	padding-top: 5px;
+	margin: auto;
+}
+
 #header {
-	height: 50px;
+	height: 150px;
 	background-color: red;
 }
-#logo {
+li.logo {
+	background-color: red;
+	width: 15%;
+	height: 150%;
+	float:left;
+	margin: 0px;
+	padding: 0px;
+	margin: 0px;
+	z-index: 10;
+}
+li.logo p {
+	position: relative;
+	background: silver;
+}
+
+li.logo img {
+	position: relative;
 	height: 100%;
-	background-color: grey;
-	width: 25%;
+	width: 100%;
 }
-#nav {
-	background-color: purple;
-	height: 50px;
-}
-#content {
-	background-color: orange;
-	height: 500px;
-}
-#footer {
+
+
+li.program {
 	background-color: green;
-	height: 50px;
+	width: 85%;
+	height: 100%;
+	float:left;
+}
+li.program p {
+
+}
+
+#main_program {
+	position: relative;
+	color: black;
+	font-size: 700%;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top:10px;
+	padding-bottom: 0px;
+	font-weight: bold;
+	font-family: Helvetica, sans-serif;
+	letter-spacing: 1em;
+	text-align: center;
+}
+#sub_program {
+	position: relative;
+	color: black;
+	font-size: 150%;
+	font-weight: bold;
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+	padding-top: 0px;
+	padding-right: 100px;
+	word-spacing: 1em;
+	line-height: 0px;
+}
+
+li.user {
+	background-color: red;
+	width: 12.5%;
+	height: 100%;
+	float:left;
+}
+
+li.user img {
+	position: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+li.setting {
+	background-color: yellow;
+	width: 12.5%;
+	height: 100%;
+	float:left;
+
+}
+#header ul {
+	padding: 0px;
+	margin: 0px;
+	
+}
+#header li, #nav li {
+	position: relative;
+	display: inline;
+}
+
+#nav {
+	position: relative;
+	right: 1.2%;
+	margin: 0px;
+	background-color: purple;
+	height: 75px;
+	width: 100%;
+}
+
+.nav_link {
+	position: relative;
+	display: inline-block;
+	width: 20.75%;
+	height: 100%;
+	float: left;
+	background-color: purple;
+}
+
+.nav_header {
+	position: relative;
+	text-align: center;
+	padding-top: 25px;
+}
+
+.nav_drop {
+	display: none;
+	position: absolute;
+    width: 100%;
+	border: none;
+	margin-top: 8.5%;
+	background-color: pink;
+}
+
+.nav_drop a {
+    color: black;
+    padding: 14px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav_drop a:hover {
+	color: white;
+	background-color: grey;
+}
+
+.nav_link:hover {
+	opacity: 0.5;
+	background-color: red;
+}
+
+.nav_link:hover .nav_drop {
+	display: block;
+	background-color: pink;
+}
+
+
+
+.nav_icons {
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	float: left;
+	background-color: purple;
+}
+
+#search {
+	position: relative;
+	width: 20%;
+	height: 100%;
+	#background-color: yellow;
+	display: inline-block;
+}
+#report {
+	position: relative;
+	width: 20%;
+	height: 100%;
+	#background-color: red;
+	float: left;
+	display: inline-block;
+}
+#user {
+	position: relative;
+	width: 20%;
+	height: 100%;
+	#background-color: pink;
+	float: left;
+	display: inline-block;
+}
+#setting {
+	position: relative;
+	width: 20%;
+	height: 100%;
+	#background-color: grey;
+	float: left;
+	display: inline-block;
+}
+#power {
+	position: relative;
+	width: 20%;
+	height: 100%;
+	#background-color: blue;
+	float: right;
+	display: inline-block;
+}
+
+#search:hover ,#report:hover ,#user:hover, #setting:hover, #power:hover {
+	background-color: red;
+}
+
+
+
+
+/*li.my_class {
+	position: relative;
+	background-color: yellow;
+	width: 21.75%;
+	height: 100%;
+	float: left;
+	
+}*/
+
+#content {
+	position: relative;
+	#top: -2px;
+	margin: 0px;
+	background-color: orange;
+	min-height: 500px;
+	padding: 15px;
+	margin: 0px;
+}
+footer {
+	margin: 0px;
+	position: relative;
+	#top: -16px;
+	background-color: green;
+	padding: 15px;
+	margin-bottom: 20px;
 }

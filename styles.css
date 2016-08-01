@@ -126,6 +126,7 @@ li.setting {
 	height: 100%;
 	float: left;
 	background-color: purple;
+	z-index: 1;
 }
 
 .nav_header {

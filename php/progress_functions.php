@@ -22,26 +22,39 @@ function form_level ($current_level, $pdo) {
 }
 
 
-function comment_display ($student_comments) {
-	
-	function comments () {
+function comment_display ($student_comments, $pdo) {
+	/*************************************************
+	*Purpose: Gather all available comments for teachers to select and display them 
+	*Given: array, db Connection
+	*Return: None
+	*************************************************/
+	function comments ($pdo) {
+		/*************************************************
+		*Purpose: Gather all available comments for teachers 
+		*Given: db Connection
+		*Return: array
+		*************************************************/
 		$sql = "SELECT comment_id, comment FROM comment_list";
-		include ($_SERVER['DOCUMENT_ROOT'] . "/PAR/php/par-sql.php");
-		return $results;
+		#include ($_SERVER['DOCUMENT_ROOT'] . "/PAR/php/par-sql.php");
+		return array_prepare_select($sql, $pdo);
 	}
-	$comments = comments();
 
-	echo "<b>COMMENTS:</b>";
-	print_r($student_comments);
+
+	$comments = comments($pdo);
+	$existing_student_comments = array();
+	
+	foreach ($student_comments as $student) {
+		array_push($existing_student_comments, $student['comment_id']);
+	}
+	
+	echo "<p><b>COMMENTS:</b></p>";
 	foreach ($comments as $comment) {
-		echo "<input type = 'checkbox' name = 'comments'";
-		if ($comment['comment_id']) {
-
+		echo "<p>$comment[comment]<input type = 'checkbox' name = 'comments'  value ='$comment[comment]'";
+		
+		if (in_array($comment['comment_id'], $existing_student_comments)) {
+			echo "checked=''";
 		}
-
+		echo "></p>";
 	}
-	echo "<input type = 'checkbox' name = 'comments'";
-
-	echo " value ='' checked=''>";
 }
 ?>

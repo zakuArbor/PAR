@@ -49,12 +49,12 @@ function comment_display ($student_comments, $pdo) {
 	
 	echo "<p><b>COMMENTS:</b></p>";
 	foreach ($comments as $comment) {
-		echo "<p>$comment[comment]<input type = 'checkbox' name = 'comments'  value ='$comment[comment]'";
+		echo "<p>$comment[comment]<input type = 'checkbox' name = 'comments[]'  value ='$comment[comment_id]'";
 		
 		if (in_array($comment['comment_id'], $existing_student_comments)) {
 			echo "checked=''";
 		}
-		echo "></p>";
+		echo "></p>\n";
 	}
 }
 ?>

@@ -54,7 +54,7 @@ $sql = "SELECT comment_id FROM progress_comment WHERE progress_id = $progress_id
 $student_comments = array_prepare_select($sql, $pdo);
 #################################################################################################################
 
-echo "<form action = 'progress_report_update.php' method = 'POST'>";
+echo "<form action = '/par/php/progress_report_update.php' method = 'POST'>";
 
 #PRINT OUT LEVEL DROPLIST########################################################################################
 form_level($student_progress['level_id'], $pdo);

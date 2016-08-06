@@ -39,8 +39,8 @@ if (!is_array($results)) {
 	#LEVEL_ID = 1: INCOMPLETE
 	#INSERT PROGRESS_REPORT######################################################################################
 	$sql = "INSERT INTO progress_report VALUES (:progress_id, 1, 0);";
-	$variables = array(':progress_id' => $progress_id['progress_id'] , ':level_id' => 1, ':interview_request' => 0);
-	$results = prepare_insert($sql, $pdo);
+	$variables = array(':progress_id' => $progress_id['progress_id']);
+	$results = prepare_non_query($sql, $pdo, $variables);
 	#############################################################################################################
 }
 else {
@@ -84,7 +84,8 @@ echo ">No<br>";
 #################################################################################################################
 
 #Hidden Input####################################################################################################
-echo "<input type = 'hidden' name = 'progress_report' value = '$progress_id[progress_id]'>";
+echo "<input type = 'hidden' name = 'progress_report' value = '$progress_id[progress_id]'>
+      <input type = 'hidden' name = 'class_id' value = '$class_id'>";
 echo "<input  type = 'submit' value = 'SUBMIT'>";
 
 $pdo = null;

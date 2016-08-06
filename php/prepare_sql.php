@@ -38,7 +38,7 @@ function single_return_prepare_select ($sql, $pdo, $variables) {
 
 }
 
-function prepare_insert ($sql, $pdo, $variables) {
+function prepare_non_query ($sql, $pdo, $variables) {
   if (isset ($sql)) {
       try {
               $prep = $pdo -> prepare($sql);

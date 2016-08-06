@@ -1,4 +1,9 @@
 <?php
+$teach_id = 1;
+
+
+include ($_SERVER['DOCUMENT_ROOT'].'/PAR/php/prepare_sql.php');
+
 if (empty($_POST['level']) or empty($_POST['progress_report'])) {
 	echo "INVALID: Form has not been sent";
 }
@@ -8,19 +13,12 @@ else {
 	$level_id = $_POST['level'];
 	$comments = $_POST['comments'];
 	$interview_request = $_POST['interview_request'];
+	$class_id = $_POST['class_id'];
 	########################################################################
-	include ($_SERVER['DOCUMENT_ROOT'].'/PAR/php/connect.php'); //connects to pal database
 	#UPDATE level and interview request#####################################
-	try{
-		$sql = "UPDATE progress_report SET level_id = :level_id, interview_request = :interview_request WHERE progress_id = :progress_id";
-		$s = $pdo -> prepare($sql);
-		$s -> bindParam(':level_id',$level);
-		$s -> bindParam(':interview_request', $interview_request);
-		$s -> bindParam(':progress_id', $progress_report);
-		$s -> execute();
-	} catch(PDOException $e) {
-		echo $e -> getMessage();
-	}
+	$sql = "UPDATE progress_report SET level_id = :level_id, interview_request = :interview_request WHERE progress_id = :progress_id";
+	$variables = array(':level_id' => $level_id, ':interview_request' => $interview_request, ':progress_id' => $progress_report);
+	prepare_non_query($sql, $pdo, $variables);
 	########################################################################
 	#UPDATE COMMENTS########################################################
 	
@@ -49,5 +47,25 @@ else {
 		echo $e -> getMessage();
 	}
 	########################################################################
+	#LINK TO NEXT STUDENT###################################################
+	$sql = "SELECT student_id FROM student_progress WHERE progress_id = :progress_report";
+	$variables = array(':progress_report' => $progress_report);
+	$student_id = single_return_prepare_select($sql, $pdo, $variables);
+
+	include ($_SERVER['DOCUMENT_ROOT'].'/PAR/php/gather_class_student.php');
+	$i = 0;
+	foreach ($students as $student) {
+		if ($student['student_id'] == $student_id['student_id']) {
+			$i+=1;
+			$student_id = $students[$i]['student_id'];
+			print_r($students[$i]);
+			echo "<br>" . $student_id;
+			header("Location: /par/progress_report.php?student_id=$student_id&class=$class_id");	
+			break;			
+		}
+		$i+=1;
+	}
+	########################################################################
+
 }
 ?>

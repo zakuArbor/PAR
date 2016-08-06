@@ -1,5 +1,5 @@
 <?php
-if (empty($_POST['level'])) {
+if (empty($_POST['level']) or empty($_POST['progress_report'])) {
 	echo "INVALID: Form has not been sent";
 }
 else {
@@ -12,12 +12,12 @@ else {
 	include ($_SERVER['DOCUMENT_ROOT'].'/PAR/php/connect.php'); //connects to pal database
 	#UPDATE level and interview request#####################################
 	try{
-		$sql = "UPDATE student_progress SET level_id = :level_id, interview_request = :interview_request WHERE progress_id = :progress_id";
+		$sql = "UPDATE progress_report SET level_id = :level_id, interview_request = :interview_request WHERE progress_id = :progress_id";
 		$s = $pdo -> prepare($sql);
 		$s -> bindParam(':level_id',$level);
 		$s -> bindParam(':interview_request', $interview_request);
 		$s -> bindParam(':progress_id', $progress_report);
-		#$s -> execute();
+		$s -> execute();
 	} catch(PDOException $e) {
 		echo $e -> getMessage();
 	}
@@ -28,22 +28,22 @@ else {
 	#2. INSERT ALL NEW STUDENT COMMENTS
 
 	try {
-		$sql = "DELETE FROM progress_comments WHERE progress_id = :progress_id;";
+		$sql = "DELETE FROM progress_comment WHERE progress_id = :progress_id;";
 		$s = $pdo -> prepare($sql);
-		$s -> bindParam(':progress_id',$progress_id);
-		#$s -> execute();
+		$s -> bindParam(':progress_id',$progress_report);
+		$s -> execute();
 	} catch(PDOException $e) {
 		echo $e -> getMessage();
 	}
 	try {
-		$sql = "INSERT INTO  progress_comments (progress_id, comment_id)
+		$sql = "INSERT INTO  progress_comment (progress_id, comment_id)
 				VALUES (:progress_id, :comment_id)";
 		$s = $pdo -> prepare($sql);
 		foreach ($comments as $comment_id) {
-			$s -> bindParam(':progress_id',$progress_id);
+			$s -> bindParam(':progress_id',$progress_report);
 			$s -> bindParam(':comment_id',$comment_id);
-			#$s -> execute();
-			echo $comment_id;
+			$s -> execute();
+			#echo $comment_id;
 		}
 	} catch(PDOException $e) {
 		echo $e -> getMessage();

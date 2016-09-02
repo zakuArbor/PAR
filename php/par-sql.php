@@ -4,7 +4,7 @@ Date Created: 2014-03-06
 Connects to PAL DATABASE and runs sql query command
 */
 
-include ($_SERVER['DOCUMENT_ROOT'].'/PAR/php/connect.php'); //connects to pal database
+include ($_SERVER['DOCUMENT_ROOT'].'/php/connect.php'); //connects to pal database
 
 if (isset ($sql)) {
 	try {

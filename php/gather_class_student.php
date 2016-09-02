@@ -5,6 +5,6 @@ $sql = "SELECT students.first_name, students.last_name, students.student_id FROM
 			WHERE class.staff_id = :teach_id 
 			AND student_progress.class_id = :class_id
 			ORDER BY students.last_name";
-$variables = array(':teach_id' => $teach_id, ':class_id' => $class_id);
+$variables = array(':teach_id' => $_SESSION['id'], ':class_id' => $class_id);
 $students = array_prepare_select($sql, $pdo, $variables);
 ?>

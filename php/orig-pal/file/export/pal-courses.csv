@@ -1,0 +1,199 @@
+course_id, course_code, course_name
+1,AMU3M.-01,Music
+2,ICS4U.-02,Computer Science
+3,MCR3U.-03,Math
+4,ICS3U.-02,Computer Science
+5,ENG3U.-03,English
+6,SPH3U.-04,Physics
+7,SCH3U.-04,Chemistry
+8,SES4U.-01,Earth and Space Science
+9,SVN3M.-01,Environmental Science
+10,1CONS-02,Housebuilding program
+11,1ELE1-02,e learning
+12,1KIC1.-02,period one spare
+13,ENG3U.-08,English
+14,MBF3C.-02,Foundations for College Mathematics
+15,ATC3M/4M.-02,Dance
+16,AWQ4M.-02,Visual Arts - Photography
+17,MCR3U.-02,Functions and Relations
+18,SPH3U.-02,Physics
+19,FSF4U.-01,Core French
+20,MCV4U.-02,Calculus and Vectors
+21,CPW4U.-01,Canadian and World Politics
+22,FSF2D.-02,Core French
+23,PPL2OP-02,Healthy Active Living Education
+24,RCR2O.-02,COURSE RECOVERY
+25,ENG4C.-02,English
+26,PAF2O/3O.-01,Personal and Fitness Activities
+27,TCJ3C/4C.-02,Construction Technology
+28,ENG3U.-04,English
+29,HSP3U.-02,Introduction to Anthropology, Psych
+30,1RESO.-05,resource room
+31,FIF4U.-02,French Immersion
+32,1RESO.-07,resource room
+33,AVI2O.-02,Visual Arts
+34,CHC2D.-02,Canadian History in the 20th centur
+35,HIP4O.-01,Personal Life Management
+36,HSB4U.-02,Challenge and Change in Society
+37,MAP4C.-02,College and Apprenticeship Mathemat
+38,EWC4U.-01,The Writer 	&rsquo;s Craft
+39,TGJ3M/4M.-02,Communication Technology
+40,AVI3M/4M.-02,Visual Arts
+41,AMU3M/4M.-01,Music
+42,ENG4U.-04,English
+43,SCH4U.-02,Chemistry
+44,CHY4U.-02,World History: The West and the Wor
+45,GPP3O/3OF-02,Leadership and Peer Support
+46,MCR3U.-04,Functions and Relations
+47,RCR2O.-08,Marketing:  Retail and Service
+48,SCH3U.-02,Chemistry
+49,RCR2O.-04,Designing Your Future
+50,COP34D-02,Coop ALL DAY  4 credits
+51,HHS4U.-02,Families in Canada
+52,PPL3OP/4OP.-02,Healthy Active Living Education
+53,IDP4O.-01,POLICE, FIRE AND COMMUNITY SERVICES
+54,MCR3U.-06,Functions and Relations
+55,SBI3U.-04,Biology
+56,MCF3M.-03,Functions
+57,MCV4U.-03,Calculus and Vectors
+58,SBI4U.-01,Biology
+59,ENG3C.-03,English
+60,HPC3O.-02,Parenting
+61,MCV4U.-01,Calculus and Vectors
+62,ADA3M/4M.-02,Dramatic Arts
+63,CHW3M.-02,World History to the Sixteenth Cent
+64,ATU3M/4M.-01,Dance - Music Theatre
+65,SPH4U.-02,Physics
+66,ICS3U/4U.-02,Introduction to Computer Studies
+67,ENG4U.-05,English
+68,COP3AD-02,Coop Half Day
+69,BAF3M.-02,Introduction to Financial Accountin
+70,HSP3U.-03,Introduction to Anthropology, Psych
+71,TDJ3M.-01,Technological Design
+72,TWJ4E.-01,Custom Woodworking
+73,MBF3C.-01,Foundations for College Mathematics
+74,PAF2O/3O.-04,Personal and Fitness Activities
+75,1RESO.-08,resource room
+76,HFN2O.-06,Food and Nutrition
+77,CGC1D.-06,Geography of Canada
+78,MFM1P.-02,Foundations of Mathematics
+79,PPL1OP-02,Healthy Active Living Education
+80,SBI3U.-02,Biology
+81,BDI3C.-02,Introduction to Entrepreneurial Stu
+82,ENG3C.-02,English
+83,MFM2P.-02,Foundations of Mathematics
+84,ADA1O.-02,Dramatic Arts
+85,CGC1P.-02,Geography of Canada
+86,FSF1P.-02,Core French
+87,MPM1D.-04,Principles of Mathematics
+88,AVI1OF-01,Visual Arts-FRENCH IMMERSION
+89,FIF1D.-03,French Immersion
+90,SNC1DF-02,Science
+91,BTT1OF-02,Introduction to Information Technol
+92,CGC1DF-02,Geography of Canada
+93,MFM1P.-04,Foundations of Mathematics
+94,SNC1P.-02,Science
+95,TIJ1O.-02,Exploring Technologies
+96,ENG1D.-08,English
+97,SNC1D.-06,Science
+98,ENG1D.-06,English
+99,PPL1OQ-02,Healthy Active Living Education
+100,MPM1D.-08,Principles of Mathematics
+101,PPL1OP-06,Healthy Active Living Education
+102,ENG1D.-04,English
+103,CGC1D.-04,Geography of Canada
+104,PPL1OP-04,Healthy Active Living Education
+105,MPM1D.-03,Principles of Mathematics
+106,ATC1O/2O.-02,Dance
+107,GLC2O.-04,Career Studies
+108,FSF1D.-06,Core French
+109,SNC1D.-04,Science
+110,FSF1D.-04,Core French
+111,ADA1O.-04,Dramatic Arts
+112,ENG1D.-02,English
+113,SNC1D.-02,Science
+114,TIJ1O.-04,Exploring Technologies
+115,BTT1O.-05,Introduction to Information Technol
+116,CHC2D.-06,Canadian History in the 20th centur
+117,MPM1D.-06,Principles of Mathematics
+118,CGC1D.-02,Geography of Canada
+119,FSF1D.-02,Core French
+120,ENG1P.-02,English
+121,PPL1OQ-05,Healthy Active Living Education
+122,MPM1D.-02,Principles of Mathematics
+123,BTT1O.-02,Introduction to Information Technol
+124,FIF1D.-02,French Immersion
+125,AVI1O.-03,Visual Arts
+126,ADA1O.-05,Dramatic Arts
+127,BTT1O.-04,Introduction to Information Technol
+128,GLE1O.-02,Learning Strategies 1: Skills for S
+129,SBI3C.-02,Biology
+130,SBI4U.-02,Biology
+131,TFJ3C.-02,Hospitality and Tourism
+132,FSF3U.-02,Core French
+133,PAF2O/3O.-02,Personal and Fitness Activities
+134,ASM2O.-01,Media Arts
+135,HZB3M.-01,Philosophy: The Big Questions
+136,AMG2O/3O.-02,Guitar Music
+137,SNC2P.-03,Science
+138,ENG3U.-02,English
+139,PPL4OQ/3OQ.-03,Healthy Active Living Education
+140,CLU3M.-02,Understanding Canadian Law
+141,MEL3E.-01,Mathematics for Everyday Life
+142,ENG2D.-04,English
+143,SNC2D.-04,Science
+144,MPM2D.-08,Principles of Mathematics
+145,GLC2O.-08,Career Studies
+146,MPM2D.-04,Principles of Mathematics
+147,CHC2DF-04,Canadian History in the 20th centur
+148,SNC2DF-02,Science
+149,ENG2D.-02,English
+150,CHV2OF-04,Civics (0.5 credit)
+151,MPM2D.-02,Principles of Mathematics
+152,CHC2D.-04,Canadian History in the 20th centur
+153,MFM2P.-04,Foundations of Mathematics
+154,SNC2D.-02,Science
+155,TCJ2O.-02,Construction Technology
+156,PAD2O.-03,OUTDOOR EDUCATION
+157,PPL2OQ-02,Healthy Active Living Education
+158,PPL4OQ/3OQ.-02,Healthy Active Living Education
+159,ENG2D.-08,English
+160,CHV2OF-02,Civics (0.5 credit)
+161,AMU1O.-02,Music
+162,SNC2D.-06,Science
+163,AMU2O.-01,Music
+164,CHV2O.-02,Civics (0.5 credit)
+165,SNC2P.-02,Science
+166,MPM2D.-06,Principles of Mathematics
+167,ICS2O.-02,Introduction to Computer Studies
+168,FIF2D.-02,French Immersion
+169,LWSBD.-01,Spanish
+170,ENG2D.-06,English
+171,CHV2O.-06,Civics (0.5 credit)
+172,ENG2P.-02,English
+173,FIF2D.-04,French Immersion
+174,SNC2DF-04,Science
+175,TGJ2O.-01,Communication Technology
+176,CHC2DF-02,Canadian History in the 20th centur
+177,CHC2P.-02,Canadian History in the 20th centur
+178,HFN2O.-02,Food and Nutrition
+179,TTJ2O.-02,Transportation Technologies
+180,SENENG.-01,English
+181,ATC1O/2O.-04,Dance
+182,HFN2O.-04,Food and Nutrition
+183,COP3AD-04,Coop Half Day
+184,FIF3U.-02,French Immersion
+185,ENG3U.-06,English
+186,ENG4U.-02,English
+187,PPL1OQ-06,Healthy Active Living Education
+188,TIJ1O.-05,Exploring Technologies
+189,MAT1L/2L.-01,Mathematics
+190,MDM4U.-02,Mathematics and Data Management
+191,ICS3U/4U.-03,Introduction to Computer Studies
+192,SCH3U.-05,Chemistry
+193,RCR2O.-06,Ontario Secondary School Literacy C
+194,TWJ3E.-02,Custom Woodworking
+195,COP3AD-06,Coop Half Day
+196,PAD2O.-02,OUTDOOR EDUCATION
+197,RCR2O.-10,COURSE RECOVERY
+198,TTJ3C.-02,Exploring Transportation  Technolog

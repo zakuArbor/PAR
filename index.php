@@ -1,69 +1,102 @@
 <?php
-#access checker
+
+include($_SERVER['DOCUMENT_ROOT'].'/php/user_session_check.php'); //checks if user is logged on
+$permission_status = 0;
+foreach ($_SESSION['permissions'] as $item) {
+	if ($item['position'] == "teacher" OR $item['position'] == "sso_admin") { 
+		$permission_status = 1;
+	}
+}
+if ($permission_status == 1) {
+	include ($_SERVER['DOCUMENT_ROOT'] . "/php/prepare_sql.php");
 ?>
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Title Page</title>
-	<!-- css annd javascript files -->
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-	<div id = "container">
-		<div id = "header">
-			<ul id = "header">
-			<li class = "logo"><img src="images/logo2.png"></li>
-			<li class = "program"><div id = "main_program">PAR</div><div id = "sub_program">PROGRESS AND REPORTS</div></li>
-			<!--<li class = "user"><img src="images/silhouette.png"></li>
-			<li class = "setting"></li>-->
-			</ul>
-		</div>
-
-		<div id = "nav">
-			<ul id = "nav">
-				<li class = "nav_link">
-					<div class = "nav_header">1</div>
-					<div class = "nav_drop">
-						<a href = "">Link 1</a>		
-						<a href = "">Link 2</a>	
-					</div>
-					
-				</li>
-				<li class = "nav_link"><div class = "nav_header">2</div></li>
-				<li class = "nav_link">
-					<div class = "nav_header">3</div>
-						<div class = "nav_drop">
-							<a href = "">Link 1</a>		
-							<a href = "">Link 2</a>	
-						</div>
-					</li>
-
-				<li class = "nav_icons">
-					<div id = "search"><img src = "images/svg/search.svg"></div>
-					<div id = "report"><img src = "images/svg/report.svg"></div>
-					<div id = "user"><img src = "images/svg/profile.svg"></div>
-					<div id = "setting"><img src = "images/svg/setting.svg"></div>
-					<div id = "power"><img src = "images/svg/power.svg"></div>
-
-				</li>
-			<!--<li class = "user"><img src="images/silhouette.png"></li>
-			<li class = "setting"></li>-->
-			</ul>
-		</div>
-
-		<div id = "content">
-			<p>http://www.flaticon.com/authors/madebyoliver   -power</p>
-			<p>http://www.flaticon.com/authors/freepik        -search</p>
-			<p>http://www.flaticon.com/authors/lucy-g         -profile</p>
-			<p>http://www.flaticon.com/authors/amit-jakhu     -setting</p>
-			<p>http://www.flaticon.com/authors/simpleicon     -report</p>
-			<p>Icon made by [author link] from www.flaticon.com</p>
-
-
-		</div>
-		<footer>test<p>d<p>d<p>d<p>d<p>d<p>d<p>d<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>d<p><p>		</footer>
+	<title>HomePage</title>		<!-- Name of site page in tab -->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/HomePage.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="/javascript/optionsTab.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
 		
+		
+		
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/javascript/color.php"); ?>
+		
+	
+	</head>
 
-	</div>
-<body>
-</body>
+	<body>
+	
+		<p> 	
+			
+			<?php 
+				
+				include('includes/toolbar.php');
+				include('includes/optionsTab.php');
+				
+			?>
+			
+			<center>
+			
+				<div class="subtitle">
+				
+					<p id="homeTitle" class="subtitle_title">
+					
+						HomePage
+					
+					</p>
+				
+				</div>
+			
+				<div class="content">
+				
+					<p id="home">
+					
+						<?php
+													
+								$sql = "SELECT * FROM homePage";
+								$homePage = array_prepare_select($sql, $pdo, []);					
+								
+						?>
+						
+						<div class="messageTitle1">
+							<?php
+								echo $homePage[0]['title'];
+							?>
+							<div id="message">
+								<?php
+								echo $homePage[0]['content'];
+							?>
+							</div>
+						</div>
+						
+						<div class="messageTitle2">
+							<?php
+								echo $homePage[1]['title'];
+							?>
+							<div id="message">
+								<?php
+								echo $homePage[1]['content'];
+							?>
+							</div>
+						</div>
+					
+					</p>
+				
+				</div>
+			
+			</center>
+			
+		</p>
+		
+	</body>
+
 </html>
+
+<?php
+} 
+else {
+	echo "NO PERMISSION";
+}
+?>

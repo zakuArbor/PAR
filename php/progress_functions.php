@@ -4,12 +4,11 @@ function form_level ($current_level, $pdo) {
 	function level ($pdo) {
 		$sql = "SELECT level_id, level FROM progress_level";
 		#include ($_SERVER['DOCUMENT_ROOT'] . "/PAR/php/par-sql.php");	
-		return array_prepare_select($sql, $pdo);
+		return array_prepare_select($sql, $pdo, []);
 	}
 
 	$levels = level($pdo);
-	
-	echo "<b>Progress:</b> <select class='' name = 'level'>";
+	echo "<b class='mobileProgress'>Progress:</b> <select class='mobileProgress' name = 'level'>";
 	foreach ($levels as $level) {
 		if ($current_level == $level['level_id']) {
 			echo "<option  value = '$level[level_id]' selected>$level[level]</option>";
@@ -36,10 +35,10 @@ function comment_display ($student_comments, $pdo) {
 		*************************************************/
 		$sql = "SELECT comment_id, comment FROM comment_list";
 		#include ($_SERVER['DOCUMENT_ROOT'] . "/PAR/php/par-sql.php");
-		return array_prepare_select($sql, $pdo);
+		return array_prepare_select($sql, $pdo, []);
 	}
 
-
+	
 	$comments = comments($pdo);
 	$existing_student_comments = array();
 	

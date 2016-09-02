@@ -1,0 +1,1576 @@
+/**************************************************************************************************************************************************/
+/*This script is the default style for the whole website
+/**************************************************************************************************************************************************/
+/*color-code-list:
+	#39393a = grey
+	#f11313 = red
+	#E6E6E6 = white
+*/
+
+
+
+
+/*********************************************************Standard layout Style Start***************************************************************/
+
+#toolbar{				/*The static toolbar at the top of all screens*/
+    position: fixed;
+	width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    padding: 5px 10px; 
+    background-color: #464647; 
+    border-bottom: 1px solid #333; 
+	box-shadow: 0px 0px 30px 10px;
+	z-index: 3;    
+	color: #000000;
+}
+
+#pup {
+  position:absolute;
+  z-index:200; /* always on top*/
+  padding: 3px;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 1000px; 
+  background-color: #777;
+  color: white;
+  font-size: 0.95em;
+}
+
+
+#optionsTab{			/*The menu that appears from the left side of the screen*/
+	position: fixed;
+	float:left;
+	width: 150px;
+    height: 100%;
+    top: 60px;
+    left: 0;
+    padding: 15px 5px;
+    background: #f11313; 
+    border: 1px solid #333; 
+	z-index:2;
+	box-shadow: 0px 0px 30px 10px;
+	color: #000000;
+}
+
+#sPic{
+	float:right;
+}
+
+/*Start of toggle that activate the menu <optionsTab>*/
+
+#optionsToggle{			
+	position: fixed;
+	width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    padding: 5px 10px;  	
+    border-bottom: 1px solid #333; 
+	z-index: 3;
+}
+
+#l1{
+	width:100%;
+	height: 20%;
+	background:red;
+	margin-top: 5px;
+	float:left;
+	margin-left:-3px;
+}
+#l2{
+position:relative;
+	width:100%;
+	height: 20%;
+	background:red;
+	margin-top: 5px;
+	float:left;
+	margin-left:-3px;
+}
+#l3{
+float:left;
+position:relative;
+	width:100%;
+	height: 20%;
+	background:red;
+	margin-top: 5px;
+	margin-left:-3px;
+}
+#l4{
+float:right;
+position:relative;
+	width:10%;
+	height: 120%;
+	background:red;
+	margin-top: -50px;
+	left: 10px;
+	
+}
+
+#optionsToggle:hover{	/*emulates a click-able button by changing the optionsToggle background color*/
+	background-color: #39393a;
+	opacity:1;
+	cursor: pointer;
+}
+
+
+/*End of toggle that activate the menu <optionsTab>*/
+
+
+
+
+
+
+#toolbar p{				/*position for the WCSS logo*/
+   position:fixed;
+   right:5px;
+   top:-35px;
+   
+   
+}
+
+.tabs{					/* general style for menu options*/
+	position: relative;	
+	left: -5px;
+	width: 100%;
+	height: 50px;
+	padding: 5px;
+	background: #39393a;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.tabs a{					/*specific style for menu option links, includes text styling*/
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	font-family: calibri;
+	font-size: 20px;
+	line-height: 45px; 
+	white-space: nowrap;
+
+}
+
+#tab12{
+	visibility: hidden;
+}
+
+.hover{					/*emulates a click-able button by changing the menu options background color*/
+	background-color: #4f4f4f;
+}
+
+#printButton{			/*Print button on all student report pages*/
+	background-image: url(/images/printButton.png);
+	width:100px;
+	height:32px;
+	float: right;
+	margin-top:-35px;
+	background-color: ; 
+	border: none;
+	display: block;
+	opacity:0.8;
+	
+}
+
+#printButton.progUp{
+		background-image: url(/images/printButton.png);
+	width:100px;
+	height:32px;
+	float: right;
+	margin-top:-10px;
+	background-color: ; 
+	border: none;
+	display: block;
+	opacity:1;
+
+
+}
+
+#printButton.studProg{
+		background-image: url(/images/printButton.png);
+	width:100px;
+	height:32px;
+	float: right;
+	margin-top:-35px;
+	background-color: ; 
+	border: none;
+	display: block;
+	opacity:1;
+
+
+}
+
+ #printButton.progUp :hover{	
+	opacity:1;
+ }
+ 
+  #printButton.studProg :hover{	
+	opacity:1;
+  }
+
+#printButton:hover{		/*emulates a click-able button by changing the print button background color*/
+	background-color: #39393a; 
+	opacity:1;
+	cursor:pointer;
+	
+}
+
+#printAll:hover{		/*emulates a click-able button by changing the print button background color*/
+	background-color: #39393a;
+	cursor: pointer;
+	opacity:1;
+}
+
+#printAll{
+	background-image: url(images/printAllButton.png);
+	width:100px;
+	height:32px;
+	float: right;
+	background-color: #39393a; 
+	border: none;
+	display: block;
+	margin-top:-35px;
+	opacity:0.8;
+	}
+
+/*********************************************************Standard Layout Style End*****************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************Standard Page Style Start*****************************************************************/
+
+.subtitle{				/*general style for subtitle bar*/
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width: 95%;
+    height: 50px;
+    top: 45px; 	/*Spacing between toolbar.php and .subtitle*/
+	padding: 5px 10px; 
+	opacity: 1;
+    background: #39393a; 
+    z-index:1;
+	box-shadow: 0px 0px 30px 10px;
+	border-radius: 10px;	
+	color: #000000;
+}
+
+
+
+
+/* Start of Forward and back buttons used to navigate through students*/
+
+#bButton a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	font-family: calibri;
+	font-size: 20px;
+	line-height: 45px; 
+	white-space: nowrap;
+	
+}
+
+#fButton a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	font-family: calibri;
+	font-size: 20px;
+	line-height: 45px; 
+	white-space: nowrap;
+	
+}
+
+
+#bButton{
+	width: 60px;
+	height: 100%;
+	float: left;
+	
+}
+
+#fButton{
+	width: 60px;
+	height: 100%;
+	float: right;
+	
+
+}
+
+#bfButton{
+float: left;
+width: 123px;
+height: 100%;
+
+
+}
+
+
+
+/* End of Forward and back buttons used to navigate through students*/
+
+
+
+
+.subtitle_title {		/*Font style on subtitle for all pages*/	
+	color: white;
+	font-family: calibri;
+	font-size: 20px;
+	line-height: 5px;
+	text-align: center;
+	
+		
+}
+#classLink{
+	float:left;
+	font-size: 20px;
+	
+}
+
+#name{
+	float:right;
+	font-size: 20px;
+}
+
+#progTitle{
+	margin-left: 45%;
+
+}
+
+.subtitle_title a {
+	color:white;
+	
+}
+
+.content{				/*general style for main content*/
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width: 95%;
+    height: auto;
+	padding: 5px 10px; 
+	opacity: 1;
+    background-color: #39393a; 
+    z-index:0;
+	box-shadow: 0px 0px 30px 10px;
+	border-radius: 10px;	
+	color: #000000;
+	display: inline-block;
+	overflow:auto;
+}
+
+#incase{
+width:95%;
+
+}
+
+#s_list{
+/*float: left;     /* SE */
+width:15%;
+text-align:left !important;
+}
+
+#p_list{
+float: right;
+width: 76%;
+}
+
+#yes_no{
+
+font-size: 28px;
+
+}
+
+
+
+/***********************************************************Standard Page Style End*****************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************Specific Page Style Start*****************************************************************/
+
+#searchPage{			/*style for content on search page*/
+	color: white;
+	text-align: center;
+	font-family: calibri;
+}
+
+#home{					/*style for content on Home page*/
+	color:white;
+	text-align: center;
+	font-family: calibri;
+	
+}
+
+#allClasses{			/*style for content on All Classes page*/
+	color:white;
+	text-align: left;
+	font-family: calibri;
+}
+
+
+
+/*Start of specific style for editReport page*/
+
+#headerInformation{		/*Style for header information in general*/
+	margin-top:30px;	
+	display: inline-block;
+	width:100%;
+	border: 2px solid;
+	color:white;
+	
+}
+
+#header{				/*style for header information in editReport page*/
+	text-align: right;
+	float:left;
+	color:white;
+	font-family: calibri;
+	display: inline-block;
+	
+}
+
+#headerExample {			/*style for header example in editReport page*/
+	border: 3px solid;
+	text-align: right;
+	float:right;
+	color:white;
+	font-size: 20px;
+	font-family: calibri;
+	display: inline-block;
+	
+}
+
+#add_button{
+float:left;
+
+}
+
+#add{
+float:left;
+
+}
+
+#headerTitle{			/*style for header title on editReport page*/
+	color:white;
+	text-align:center;
+	font-family: calibri;
+	font-size: 28px;
+	margin-bottom: 30px;
+
+}
+
+#footerInformation{		/*Style for footer information in general*/
+	margin-top:50px;	
+	display: inline-block;
+	width:100%;
+	border: 2px solid;
+	color:white;
+	
+}
+
+#footerExample {			/*style for footer example in editReport page*/
+	border: 3px solid;
+	text-align: right;
+	float:right;
+	color:white;
+	font-size: 20px;
+	font-family: calibri;
+	display: inline-block;
+	width:40%;
+	
+}
+
+#footerTitle{			/*style for footer title on editReport page*/
+	color:white;
+	text-align:center;
+	font-family: calibri;
+	font-size: 28px;
+	margin-bottom: 30px;
+
+}
+
+#footer{				/*style for footer information in editReport page*/
+	text-align: left;	
+	color:white;
+	float:left;
+	font-family: calibri;
+	display: inline-block;
+
+}
+
+#editComments{		/*Style for editing comments in general*/
+	margin-top:50px;	
+	display: inline-block;
+	width:100%;
+	border: 2px solid;
+	color:white;
+	
+}
+
+#editCommentsTitle{			/*style for edit comments title on editReport page*/
+	color:white;
+	text-align:center;
+	font-family: calibri;
+	font-size: 28px;
+	margin-bottom: 30px;
+
+}
+
+#comments{				/*style for actual comment inputs in editReport page*/
+	text-align: right;	
+	color:white;
+	float:left;
+	font-family: calibri;
+	display: inline-block;
+	width:60%;
+	
+
+}
+
+#commentWidth{
+width:90%;
+
+}
+
+#add_button{
+float: right;
+}
+
+.s_list{
+	text-align: left;	
+	color:white;	
+	font-family: calibri;
+	/*float:left;   /* SE */
+	text-decoration: none;
+
+}
+
+
+
+/*End of specific style for editReport page*/
+
+
+
+
+
+/*Start of specific style for editSite page and homepage content*/
+
+.messageTitle1{			/*Style for homepage message board and notification board titles*/
+	width:48%;
+	height: auto;
+	color:white;
+	display: inline-block;
+	border: 2px solid;
+	margin: 5px;
+	font-size: 28px;
+	float: left;
+	
+}
+
+.messageTitle2{			/*Style for homepage message board and notification board titles*/
+	width:48%;
+	height: auto;
+	color:white;
+	display: inline-block;
+	border: 2px solid;
+	margin: 5px;
+	font-size: 28px;
+	float: right;
+	
+}
+
+#message{				/*style for homepage message board and notification board content*/
+	text-align: left;	
+	color:white;
+	width:90%;
+	height: 90%;	
+	font-size: 20px;
+	font-family: calibri;		
+	margin-top:50px;
+	margin-left: 3%;
+	margin-right: 3%;
+	overflow: hidden;
+	padding:2%;
+	
+}
+
+#homePageContent{		/*Style for edit site input parameters*/
+	text-align:left;
+	float:left;
+	color:white;
+	font-size:20px;
+	font-family:calibri;
+	border: 2px solid;
+	width:50%;
+	
+}
+
+#themer{
+	text-align:right;
+	float:right;
+	color:white;
+	font-size:20px;
+	font-family:calibri;
+	border: 2px solid;
+}
+
+
+
+/*End of specific style for editSite page*/
+
+
+
+
+
+/*Specific style for advanced Search Start*/
+
+#advSearch{				/*style for content on Advanced Search page*/
+	color:white;
+	text-align:left;
+	position:relative;
+	width:30%; 
+	font-size:22px;
+	font-family: calibri;
+	float:left;
+	overflow:hidden;
+	
+	
+}
+
+.inputsize{				/*Input Size*/
+	width:40%;
+}
+
+
+/*Specific style for advanced Search End*/
+
+
+
+
+
+/***********************************************************Specific Page Style End*****************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************Progress Report Style Start*************************************************************/
+
+#ProgressForm {			/*Style for comments/checkboxes in student_report*/
+	color: white;
+	font-family: calibri;
+	font-size: 20px;	
+	text-align: left;	
+	
+}
+
+#ProgressTable {			/*Standard style for all progress report summary tables*/	
+	padding: 5px;
+	color: white;
+	font-family: calibri;
+	font-size: 20px;
+	float:right;
+	width:40%;
+	text-align: center;
+	border:1px solid white;	
+	word-wrap: normal;
+}
+#fade{				/*submit confirm fade timer*/
+	color: white;
+	font-family: calibri;
+	font-size: 20px;
+	text-align: center;	
+}
+
+
+/***********************************************************Progress Report Style End*************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************Student/Class/Course Button Style Start*****************************************************/
+
+.S_names{				/*Standard style for all button text*/
+	color: #E6E6E6;
+	font-size: 32px;
+	font-family: calibri;
+	text-align: center;
+	text-decoration: none;
+}
+
+#S_title{
+
+	color: #E6E6E6;
+	font-size: 32px;
+	font-family: calibri;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 30px;
+	
+}
+a.S_names:hover {		/*Emulates a button for all student names in class specific page*/
+	background: grey;
+	opacity:1;
+}
+
+#left {					/*Left align*/
+	text-align: left;	
+}
+
+#class_names{			/*Course button style*/
+	margin: 20px;
+	position: relative;	
+	left: -5px;
+	width: 50%;
+	height: 100px;
+	padding: 5px;
+	background: #E6E6E6;
+	text-align:center;
+	line-height: 100px;  	
+	box-shadow: 0px 0px 10px 5px;
+	color: #000000;
+	display: block;
+	overflow: hidden;
+}
+
+#class_names a{			/*Course Button link style*/
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: #39393a;
+	font-family: calibri;
+	font-size: 40px;
+	line-height: 100px; 
+	white-space: nowrap;
+	text-align: center;
+}
+
+#student_names{			/*Student name button style*/
+	margin: 10px;
+	position: relative;	
+	left: -5px;
+	width: 30%;
+	height: 100px;
+	padding: 5px;
+	background: #E6E6E6;
+	text-align:center;
+	line-height: 100px; 
+	display: inline-block;	
+	box-shadow: 0px 0px 10px 5px;
+	color: #000000;
+	overflow: auto;
+}
+
+#student_names a{		/*Student name button link style*/
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: #39393a;
+	font-family: calibri;
+	font-size: 40px;
+	line-height: 100px; 
+	white-space: nowrap;
+	text-align: center;
+}
+
+
+/*******************************************************Student/Class/Course Button Style End*******************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************Search Bar Style Start********************************************************************/
+
+#searchid{				/*Style for search bar on searchPage*/
+	position: relative;
+	width:30%;	
+	padding:10px;
+	font-size:14px;
+	z-index:6;
+	float:left;
+	margin-top:-40px;
+}
+
+
+#result{				/*Style for search bar's drop down menu*/
+	position:absolute;
+	width:29.2%;
+	padding:12px;
+	display:none;
+	margin-top:2px;
+	border-top:0px;
+	overflow:hidden;
+	margin-bottom:4px;
+	background-color: #E6E6E6;
+	z-index:6;
+	
+	
+}
+
+.show{					/*Style for drop down menu content*/
+	padding:10px; 
+	margin-bottom:2px;
+	font-size:30px; 
+	height:50px;
+	z-index:6;
+	background:#39393a;	
+}
+
+.show:hover{			/*Emulates a click-able button when hovering over student name*/
+	background:#f11313;
+	color:#FFF;
+	cursor:pointer;
+	z-index:6;
+}
+
+
+/***********************************************************Search Bar Style End********************************************************************/
+
+
+#exportInformation{		/*Style for export information in general*/
+	margin-top:50px;	
+	display: inline-block;
+	width:100%;
+	border: 2px solid;
+	color:white;
+	
+}
+
+#exportTitle{			/*style for export title on editReport page*/
+	color:white;
+	text-align:center;
+	font-family: calibri;
+	font-size: 28px;
+	margin-bottom: 30px;
+
+}
+
+#export{				/*style for export information in editReport page*/
+	text-align: left;	
+	color:white;
+	float:left;
+	font-family: calibri;
+	display: inline-block;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+#importInformation{		/*Style for import information in general*/
+	margin-top:50px;	
+	display: inline-block;
+	width:100%;
+	border: 2px solid;
+	color:white;
+	
+}
+
+#importTitle{			/*style for import title on editReport page*/
+	color:white;
+	text-align:center;
+	font-family: calibri;
+	font-size: 28px;
+	margin-bottom: 30px;
+
+}
+
+#import{				/*style for import information in editReport page*/
+	text-align: left;	
+	color:white;
+	float:left;
+	font-family: calibri;
+	display: inline-block;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+
+
+/***********************************************************Search for the mobile site********************************************************************/
+
+
+@media only screen and (max-device-width: 480px) {
+  /* define mobile specific styles come here */
+ 
+#optionsTab{			/*The menu that appears from the left side of the screen*/
+	position: fixed;
+	float:left;
+	width: 40%;
+    height: 100%;
+    top: 115px;
+    left: 0;
+    padding: 15px 5px;
+    background: #f11313; 
+    border: 1px solid #333; 
+	z-index:2;
+	box-shadow: 0px 0px 30px 10px;
+	color: #000000;
+}
+
+#scroll{
+	overflow: auto;
+	height: 100%;
+
+}
+
+#sPic{
+	float:right;
+	
+}
+
+#toolbar{				/*The static toolbar at the top of all screens*/
+    position: fixed;
+	width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    padding: 5px 10px; 
+    background-color: #464647; 
+    border-bottom: 1px solid #333; 
+	box-shadow: 0px 0px 30px 10px;
+	z-index: 3;    
+	color: #000000;
+}
+
+#tab8{
+	display: none;
+
+}
+
+#homeTitle{
+	margin-top: 50px;
+
+}
+
+#optionsToggle{			
+	position: fixed;
+	width: 100px;
+    height:100px;
+    top: 0;
+    left: 0;
+    padding: 5px 10px;  	
+    border-bottom: 1px solid #333; 
+	z-index: 3;
+	
+}
+
+#l1{
+	width:100%;
+	height: 20%;
+	background:red;
+	margin-top: 10px;
+	float:left;
+	margin-left:-3px;
+	
+}
+#l2{
+position:relative;
+	width:100%;
+	height: 20%;
+	background:red;
+	margin-top: 10px;
+	float:left;
+	margin-left:-3px;
+	
+}
+#l3{
+	float:left;
+	position:relative;
+	width:100%;
+	height: 20%;
+	background:red;
+	margin-top: 10px;
+	margin-left:-3px;
+	
+}
+#l4{
+	float:right;
+	position:relative;
+	width:10%;
+	height: 120%;
+	background:red;
+	left: 10px;
+	margin-top: -105px;
+		
+}
+
+.tabs{					/* general style for menu options*/
+	position: relative;	
+	left: -5px;
+	width: 100%;
+	height: 150px;
+	padding: 5px;
+	background: #39393a;
+	text-align: center;
+	margin-top: 15px;
+	
+}
+
+.tabs a{					/*specific style for menu option links, includes text styling*/
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	font-family: calibri;
+	font-size: 55px;
+	line-height: 130px;
+	overflow: auto;
+	
+}
+
+#tab12{
+	 visibility: hidden;
+	 
+}
+
+#printButton.mobile{			/*Print button on all student report pages*/
+	background-image: url(/images/printButton.png);
+	width:200px;
+	height:64px;
+	float: right;
+	margin-top:-100px;
+	border: none;
+	display: block;
+	opacity:0.8;
+	background-size: cover;
+	
+}
+
+  #printButton.progUp{			/*Print button on all student report pages*/
+	background-image: url(/images/printButton.png);
+	width:200px;
+	height:64px;
+	float: right;
+	margin-top:-75px;
+	border: none;
+	display: block;
+	opacity:0.8;
+	background-size: cover;
+	
+}
+
+  #printButton.studProg{			/*Print button on all student report pages*/
+	background-image: url(/images/printButton.png);
+	width:200px;
+	height:64px;
+	float: right;
+	margin-top:-100px;
+	border: none;
+	display: block;
+	opacity:0.8;
+	background-size: cover;
+	
+}
+
+.subtitle{				/*general style for subtitle bar*/
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width: 95%;
+    height: 100px;
+    top: 45px; 	/*Spacing between toolbar.php and .subtitle*/
+	padding: 5px 10px; 
+	opacity: 1;
+    background: #39393a; 
+    z-index:1;
+	box-shadow: 0px 0px 30px 10px;
+	border-radius: 10px;	
+	color: #000000;
+	
+}
+
+#bButton{
+	width: 46%;
+	height: 100%;
+	float: left;
+	
+}
+
+#fButton{
+	width: 46%;
+	height: 100%;
+	float: right;
+	
+
+}
+
+#bfButton{
+	float: left;
+	width: 200px;
+	height: 100%;
+
+}
+
+#bButton a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	font-family: calibri;
+	font-size: 45px;
+	line-height: 80px; 
+	white-space: nowrap;
+	
+}
+
+#fButton a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	font-family: calibri;
+	font-size: 45px;
+	line-height: 80px; 
+	white-space: nowrap;
+	
+}
+
+.subtitle_title {		/*Font style on subtitle for all pages*/	
+	color: white;
+	font-family: calibri;
+	font-size: 60px;	
+	line-height: 5px;
+	text-align: center;
+	width: 75%;
+	margin-left: 0%;
+	
+}
+
+#progTitle{
+	margin-left: 0px;
+	
+}
+
+#adSeTit{
+	margin-left: 200px;
+
+}
+#classLink{
+	margin-top: -60px;
+	width:100%;
+	font-size: 30px;
+	float:left;
+
+}
+
+#name{
+	width:100%;
+	float:right;
+	font-size: 30px;
+	margin-top:20px;
+	
+}
+
+#s_list{
+	display: none;
+
+}
+
+#p_list{
+	float: right;
+	width: 98%;
+	
+}
+
+.mobileProgress{
+	font-size: 50px;
+	margin-top: 10px;
+
+}
+
+#progSub{
+	float: right;
+	
+}
+
+#yes_no{
+	font-size: 55px;
+
+}
+
+#allClasses{			/*style for content on All Classes page*/
+	color:white;
+	text-align: left;
+	font-family: calibri;
+	font-size: 60px;
+	
+}
+
+#headerInformation{		/*Style for header information in general*/
+	margin-top:30px;	
+	display: inline-block;
+	width:100%;
+	border: 2px solid;
+	color:white;
+	
+}
+
+#header{				/*style for header information in editReport page*/
+	text-align: left;
+	float:left;
+	color:white;
+	font-family: calibri;
+	display: inline-block;
+	font-size:60px;
+	
+}
+
+#headerTitle{			/*style for header title on editReport page*/
+	color:white;
+	text-align:center;
+	font-family: calibri;
+	font-size: 80px;
+	margin-bottom: 30px;
+
+}
+
+#headerExample {			/*style for header example in editReport page*/
+	display: none;
+	
+}
+
+#footerInformation{		/*Style for footer information in general*/
+	margin-top:30px;	
+	display: inline-block;
+	width:100%;
+	border: 2px solid;
+	color:white;
+	
+}
+#footer{				/*style for footer information in editReport page*/
+	text-align: left;
+	float:left;
+	color:white;
+	font-family: calibri;
+	display: inline-block;
+	font-size:60px;
+	
+}
+
+#footerTitle{			/*style for footer title on editReport page*/
+	color:white;
+	text-align:center;
+	font-family: calibri;
+	font-size: 80px;
+	margin-bottom: 30px;
+
+}
+
+#footerExample {			/*style for footer example in editReport page*/
+	display: none;
+	
+}
+
+#fMess.mobileProgress{
+	font-size: 30px;
+
+}
+
+#editComments{		/*Style for editing comments in general*/
+	margin-top:50px;	
+	display: inline-block;
+	width:100%;
+	border: 2px solid;
+	color:white;
+	
+}
+
+#editCommentsTitle{			/*style for edit comments title on editReport page*/
+	color:white;
+	text-align:center;
+	font-family: calibri;
+	font-size: 80px;
+	margin-bottom: 30px;
+
+}
+
+#comments{				/*style for actual comment inputs in editReport page*/
+	text-align: left;	
+	color:white;
+	float:left;
+	font-family: calibri;
+	display: inline-block;
+	width:80%;
+	font-size: 50px;
+	
+}
+
+#commentWidth{
+	width:100%;
+
+}
+
+#add_button{
+	float: left;
+
+}
+
+#homePageContent{		/*Style for edit site input parameters*/
+	text-align:left;
+	float:left;
+	color:white;
+	font-size:80px;
+	font-family:calibri;
+	border: 2px solid;
+	width:100%;
+		
+}
+
+#themer{
+	text-align:left;
+	float:left;
+	color:white;
+	font-size:60px;
+	font-family:calibri;
+	border: 2px solid;
+	width:100%;
+	
+}
+
+#mobileColor{
+	font-size: 60px;
+
+}
+
+.messageTitle1{			/*Style for homepage message board and notification board titles*/
+	width:90%;
+	height: auto;
+	color:white;
+	display: inline-block;
+	border: 2px solid;
+	margin: 5px;
+	font-size: 80px;
+	float: none;
+	
+}
+
+.messageTitle2{			/*Style for homepage message board and notification board titles*/
+	width:90%;
+	height: auto;
+	color:white;
+	display: inline-block;
+	border: 2px solid;
+	margin: 5px;
+	font-size: 80px;
+	float:none;
+	
+	
+}
+
+#message{				/*style for homepage message board and notification board content*/
+	text-align: left;	
+	color:white;
+	width:90%;
+	height: 90%;	
+	font-size: 60px;
+	font-family: calibri;		
+	margin-top:50px;
+	margin-left: 3%;
+	margin-right: 3%;
+	overflow: hidden;
+	padding:2%;
+	
+}
+
+#advSearch{				/*style for content on Advanced Search page*/
+	color:white;
+	text-align:left;
+	position:relative;
+	width:80%; 
+	font-size:60px;
+	font-family: calibri;
+	float:left;
+	overflow:hidden;	
+	
+}
+
+#fade{				/*submit confirm fade timer*/
+	color: white;
+	font-family: calibri;
+	font-size: 50px;
+	text-align: center;	
+	
+}
+
+#student_names{			/*Student name button style*/
+	margin: 10px;
+	position: relative;	
+	left: -5px;
+	width: 80%;
+	height: 200px;
+	padding: 5px;
+	background: #E6E6E6;
+	text-align:center;
+	line-height: 100px; 
+	display: inline-block;	
+	box-shadow: 0px 0px 10px 5px;
+	color: #000000;
+	overflow: auto;
+	
+}
+
+#student_names a{		/*Student name button link style*/
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: #39393a;
+	font-family: calibri;
+	font-size: 80px;
+	line-height: 200px; 
+	white-space: nowrap;
+	text-align: center;
+	
+}
+
+#class_names{			/*Course button style*/
+	margin: 20px;
+	position: relative;	
+	left: -5px;
+	width: 80%;
+	height: 200px;
+	padding: 5px;
+	background: #E6E6E6;
+	text-align:center;
+	line-height: 100px;  	
+	box-shadow: 0px 0px 10px 5px;
+	color: #000000;
+	display: block;
+	overflow: hidden;
+	
+}
+
+#class_names a{			/*Course Button link style*/
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: #39393a;
+	font-family: calibri;
+	font-size: 80px;
+	line-height: 200px; 
+	white-space: nowrap;
+	text-align: center;
+	
+}
+
+#S_title{
+	color: #E6E6E6;
+	font-size: 60px;
+	font-family: calibri;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 30px;
+	
+}
+
+#sClass{
+	margin-left: -50px;
+
+}
+
+#searchid{				/*Style for search bar on searchPage*/
+	position: relative;
+	width:50%;	
+	padding:20px;
+	font-size:30px;
+	z-index:6;
+	float:left;
+	margin-top:-105px;
+	
+}
+
+#searchTitle{
+	margin-left: 250px;
+
+}
+
+#result{				/*Style for search bar's drop down menu*/
+	position:absolute;
+	width:90%;
+	padding:12px;
+	display:none;
+	margin-top:2px;
+	border-top:0px;
+	overflow:hidden;
+	margin-bottom:4px;
+	background-color: #E6E6E6;
+	z-index:6;
+		
+}
+
+.show{					/*Style for drop down menu content*/
+	padding:10px; 
+	margin-bottom:2px;
+	font-size:50px; 
+	height:100px;
+	z-index:6;
+	background:#39393a;	
+	
+}
+  
+}

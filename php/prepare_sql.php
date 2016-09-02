@@ -2,7 +2,7 @@
 /*
 SQL PREPARED STATEMENT
 */
-include ($_SERVER['DOCUMENT_ROOT'].'/PAR/php/connect.php'); //connects to pal database
+include ($_SERVER['DOCUMENT_ROOT'].'/php/connect.php'); //connects to pal database
 
 function array_prepare_select ($sql, $pdo, $variables) {
   if (isset ($sql)) {

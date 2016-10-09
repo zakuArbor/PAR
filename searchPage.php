@@ -38,7 +38,7 @@ if ($permission_status == 1) {
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="/HomePage.css">
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
 		<script type="text/javascript" src="/javascript/optionsTab.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
 		

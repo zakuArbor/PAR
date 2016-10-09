@@ -1,6 +1,5 @@
 <html><head></head><body>
 
-<script type="text/javascript" src="/search/jquery-1.8.0.min.js"></script>
 <script type="text/javascript">
 $(function(){
 $(".search").keyup(function() 

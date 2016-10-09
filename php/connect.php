@@ -1,7 +1,7 @@
 <?php
 
 try {
-     $pdo = new PDO('mysql:host=localhost;dbname=pal_r', 'root', ''); //connects to database
+     $pdo = new PDO('mysql:host=localhost;dbname=par', 'zaku_public', 'zaku_public4GITHUB'); //connects to database
      $pdo -> setAttribute (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //to print an error whenever PDO Object fails to do its task
      $pdo -> exec ('SET NAMES "utf8" '); //sets character set for the database to use because the default character set is latin-1
 }

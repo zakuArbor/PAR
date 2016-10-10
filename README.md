@@ -9,6 +9,8 @@
 
 Created on May 2016 with Permission from Daman Singh based on a 2014 Highschool Project
 
+You can view a demo version of this project at <a href - "https://par.juhongkim.tk/SSO/">par.juhongkim.tk/SSO/</a>
+
 <!--
 <ul>
 	<li>FILES CREATED

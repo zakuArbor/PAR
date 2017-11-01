@@ -1,7 +1,6 @@
 # PAR
 <p>Progress and Report Card Maker</p>
 <p>PROGRESS: NOT COMPLETED - TESTING PERIOD</p>
-<p>NOTE: <s>This is just a personal project that is not meant for others to use but people can look at it and use it on their own if they wish to. I am just using this github as a cloud</s></p>
 
 <p>PAR, Progress Assessment Report, is a program designed for teachers to create progress report cards. PAR is based on another program called PAL 2014 created by two highschool students, Daman Singh and Ju Hong Kim.</p>
 
@@ -10,6 +9,12 @@
 Created on May 2016 with Permission from Daman Singh based on a 2014 Highschool Project
 
 You can view a demo version of this project at <a href = "https://par.juhongkim.tk/SSO/">par.juhongkim.ml/SSO/</a>
+
+<b>TODO LIST</b>
+<ul>
+	<li>Optimize SQL query</li>
+	<li>Reimplment Export and Import Features</li>
+</ul>
 
 <!--
 <ul>

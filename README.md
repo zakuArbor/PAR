@@ -14,6 +14,9 @@ You can view a demo version of this project at <a href = "https://par.juhongkim.
 <ul>
 	<li>Optimize SQL query</li>
 	<li>Reimplment Export and Import Features</li>
+	<li>Prevent CRSF by using random generated tokens</li>
+	<li>Use Kali Linux to penetrate website such as using SQLMap</li>
+	<li>Check if prepared statements are being used properly</li>
 </ul>
 
 <!--

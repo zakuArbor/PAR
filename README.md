@@ -6,7 +6,7 @@
 
 <p>PAR is an updated version of PAL. PAL lacked security against injections and had long inefficient code. So Ju Hong Kim has decided to add or at least try to add more security against injections and make some code more efficient. Though most of the code was left as it was from 2014 due to time constraints.</p>
 
-Created on May 2016 with Permission from Daman Singh based on a 2014 Highschool Project
+Created on May 2016 with Permission from <a href = 'https://github.com/damanveen'>Daman Singh</a> based on a 2014 Highschool Project
 
 You can view a demo version of this project at <a href = "https://par.juhongkim.ml/SSO/">par.juhongkim.ml/SSO/</a>
 
